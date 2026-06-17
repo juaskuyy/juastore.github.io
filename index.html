@@ -3,158 +3,1853 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JuaStore Premium Digital</title>
+
+<title>JuaStore Premium | Premium Apps & Digital Store</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#f2f2f2;
-margin:0;
-padding:0;
-color:#333;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(circle at top,
+    #8b5cf6,
+    #1e1b4b 40%,
+    #09090f);
+    color:white;
+    min-height:100vh;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#c084fc;
+    border-radius:20px;
+}
+
+
+/* HEADER */
 
 header{
-background:#303030;
-color:white;
-text-align:center;
-padding:60px 20px;
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.15);
 }
 
-header h1{
-font-size:45px;
-margin:0;
+nav{
+    max-width:1300px;
+    margin:auto;
+    padding:18px 25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-header p{
-font-size:18px;
-opacity:.9;
+
+.logo{
+    font-size:26px;
+    font-weight:800;
+    background:linear-gradient(
+    90deg,
+    #ffb5ff,
+    #ffffff);
+    
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:12px 24px;
-background:white;
-color:#303030;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+
+.nav-btn{
+    display:flex;
+    gap:12px;
 }
+
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+
+.mode-btn{
+    background:#a855f7;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+.mode-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:
+    0 0 20px #c084fc;
+}
+
+
+
+/* HERO */
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+    padding:80px 20px;
+}
+
+
+.hero h1{
+    font-size:55px;
+    font-weight:800;
+    line-height:1.1;
+}
+
+
+.hero span{
+    color:#f0abfc;
+}
+
+
+.hero p{
+    margin-top:20px;
+    color:#ddd;
+    font-size:18px;
+}
+
+
+.hero-box{
+    margin-top:35px;
+
+    display:inline-flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+
+.badge{
+    background:rgba(255,255,255,.12);
+    padding:12px 20px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+
+
+/* SEARCH */
+
+.tools{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px 40px;
+}
+
+
+.search{
+    width:100%;
+    padding:18px 25px;
+    border-radius:18px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+
+.filters{
+    margin-top:20px;
+
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+
+.filter-btn{
+
+    background:
+    rgba(255,255,255,.12);
+
+    color:white;
+
+    padding:
+    10px 18px;
+
+    border-radius:25px;
+
+    transition:.3s;
+}
+
+
+.filter-btn:hover,
+.filter-btn.active{
+
+    background:#c084fc;
+    color:#111;
+}
+
+
+
+/* PRODUCT */
 
 .container{
-max-width:1200px;
-margin:auto;
-padding:30px;
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:22px;
+
 }
+
 
 .card{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-text-align:center;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    backdrop-filter:
+    blur(20px);
+
+    transition:.35s;
+
 }
+
+
+.card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 0 35px #a855f7;
+
+}
+
+
+.category{
+
+    display:inline-block;
+
+    background:#7e22ce;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+.card h2{
+
+    margin-top:15px;
+
+    font-size:24px;
+
+}
+
+
+.desc{
+
+    color:#ddd;
+
+    margin:
+    12px 0 18px;
+
+    line-height:1.5;
+
+}
+
 
 .price{
-font-size:24px;
-font-weight:bold;
-margin:10px 0;
+
+    background:
+    rgba(0,0,0,.35);
+
+    padding:14px;
+
+    border-radius:15px;
+
+    margin-top:12px;
+
+    font-weight:600;
+
 }
 
-footer{
-background:#303030;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+
+.price span{
+
+    color:#f0abfc;
+
+    font-weight:800;
+
 }
+
+
+/* LINK BUTTON */
+
+.link-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #ec4899,
+    #a855f7);
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.link-btn:hover{
+
+    transform:
+    scale(1.05);
+
+}
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    nav{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .card h2{
+        font-size:20px;
+    }
+
+}
+
+
+/* DARK & LIGHT MODE */
+
+.light-mode{
+    background:
+    linear-gradient(
+    180deg,
+    #ffe4ff,
+    #fdf2ff,
+    #ffffff);
+
+    color:#111;
+}
+
+
+.light-mode header{
+    background:
+    rgba(255,255,255,.65);
+
+    border-color:
+    rgba(0,0,0,.1);
+}
+
+
+.light-mode .card{
+
+    background:white;
+
+    border:1px solid #eee;
+
+    color:#111;
+
+}
+
+
+.light-mode .desc{
+    color:#555;
+}
+
+
+.light-mode .search{
+
+    background:white;
+
+    color:#111;
+
+}
+
+
+.light-mode .filter-btn{
+
+    background:#f3e8ff;
+
+    color:#6b21a8;
+
+}
+
+
+/* FLOAT BUTTON */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    text-decoration:none;
+
+    z-index:999;
+
+    box-shadow:
+    0 0 20px #25D366;
+
+}
+
+
+footer{
+
+    margin-top:70px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#ddd;
+
+}
+
+
 </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
+
 <header>
-<h1>JuaStore</h1>
-<p>Premium Digital Services Trusted Since 2025</p>
-<a href="https://wa.me/6285111662004" class="btn">Order Sekarang</a>
+
+<nav>
+
+<div class="logo">
+🐨 JuaStore Premium
+</div>
+
+
+<div class="nav-btn">
+
+<button class="mode-btn"
+onclick="toggleMode()">
+
+🌙 Mode
+
+</button>
+
+</div>
+
+
+</nav>
+
 </header>
 
-<div class="container">
 
-<h2>Katalog Premium</h2>
 
-<div class="grid">
+<!-- HERO -->
+
+<section class="hero">
+
+
+<h1>
+
+Aplikasi <span>Premium</span><br>
+Harga Murah & Bergaransi
+
+</h1>
+
+
+<p>
+
+Streaming, AI, Design, VPN, Game, 
+dan berbagai kebutuhan digital lainnya.
+
+</p>
+
+
+<div class="hero-box">
+
+<div class="badge">
+⚡ Fast Proses
+</div>
+
+<div class="badge">
+🛡 Garansi Store
+</div>
+
+<div class="badge">
+📱 Semua Device
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SEARCH & FILTER -->
+
+
+<section class="tools">
+
+
+<input 
+type="text"
+id="search"
+class="search"
+placeholder="🔍 Cari aplikasi...">
+
+
+<div class="filters">
+
+
+<button 
+class="filter-btn active"
+onclick="filterProduct('all')">
+
+Semua
+
+</button>
+
+
+<button 
+class="filter-btn"
+onclick="filterProduct('AI')">
+
+🤖 AI
+
+</button>
+
+
+<button 
+class="filter-btn"
+onclick="filterProduct('Streaming')">
+
+🎬 Streaming
+
+</button>
+
+
+<button 
+class="filter-btn"
+onclick="filterProduct('Design')">
+
+🎨 Design
+
+</button>
+
+
+<button 
+class="filter-btn"
+onclick="filterProduct('VPN')">
+
+🔐 VPN
+
+</button>
+
+
+<button 
+class="filter-btn"
+onclick="filterProduct('Game')">
+
+🎮 Game
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- PRODUCT LIST -->
+
+
+<section class="container">
+
+
+<div class="products" id="products">
+
+
+
+<!-- AI PRODUCTS -->
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+🤖 AI
+</span>
+
+
+<h2>
+ChatGPT Premium
+</h2>
+
+
+<p class="desc">
+
+AI untuk belajar, kerja, coding,
+dan kebutuhan harian.
+
+</p>
+
+
+<div class="price">
+
+Go 3 Bulan:
+<span>Rp55.000</span><br>
+
+Go 1 Tahun:
+<span>Rp85.000</span><br>
+
+Plus Sharing:
+<span>Rp13.000</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="card" data-category="AI">
+
+
+<span class="category">
+🤖 AI
+</span>
+
+
+<h2>
+Claude AI Premium
+</h2>
+
+
+<p class="desc">
+
+AI cepat untuk produktivitas,
+coding, dan pekerjaan.
+
+</p>
+
+
+<div class="price">
+
+1 Bulan:
+<span>Rp55.000</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="card"
+data-category="AI">
+
+
+<span class="category">
+
+🤖 AI
+
+</span>
+
+
+<h2>
+Gemini Premium
+
+</h2>
+
+
+<p class="desc">
+
+AI Google untuk teks,
+gambar, suara dan video.
+
+</p>
+
+
+<div class="price">
+
+4 Bulan:
+<span>
+Rp26.500
+</span>
+
+<br>
+
+1 Tahun:
+<span>
+Rp85.000
+</span>
+
+</div>
+
+
+</div>
+<!-- AI PRODUCTS LANJUTAN -->
+
+<div class="card" data-category="AI">
+
+<span class="category">
+🤖 AI
+</span>
+
+<h2>
+Grok AI Premium
+</h2>
+
+<p class="desc">
+AI dengan akses real-time, DeepSearch,
+Think Mode, dan pembuatan gambar.
+</p>
+
+<div class="price">
+Sharing 3 Bulan:
+<span>Rp50.000</span><br>
+
+Private 3 Day:
+<span>Rp6.000</span><br>
+
+Private 3 Bulan:
+<span>Rp150.000</span>
+</div>
+
+</div>
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+🤖 AI
+</span>
+
+<h2>
+Perplexity Premium
+</h2>
+
+<p class="desc">
+AI pencarian dan riset cepat
+untuk tugas, pekerjaan, dan produktivitas.
+</p>
+
+<div class="price">
+Sharing 1 Bulan:
+<span>Rp9.000</span><br>
+
+Private 1 Bulan:
+<span>Rp28.000</span>
+</div>
+
+</div>
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+🤖 AI
+</span>
+
+<h2>
+Leonardo AI Premium
+</h2>
+
+<p class="desc">
+AI generator gambar untuk desain,
+konten, logo, poster, dan kreativitas.
+</p>
+
+<div class="price">
+Premium:
+<span>Rp6.500</span>
+</div>
+
+</div>
+
+
+
+<!-- DESIGN & EDITING -->
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+Adobe Creative
+</h2>
+
+<p class="desc">
+Akses aplikasi Adobe lengkap dengan fitur AI Firefly dan cloud storage.
+</p>
+
+<div class="price">
+
+3 Bulan:
+<span>Rp19.000</span><br>
+
+4 Bulan:
+<span>Rp27.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+Canva Premium
+</h2>
+
+<p class="desc">
+Template, elemen premium,
+dan fitur desain tanpa batas.
+</p>
+
+<div class="price">
+
+Member 1 Bulan:
+<span>Rp500</span><br>
+
+1 Tahun:
+<span>Rp3.500</span><br>
+
+Lifetime:
+<span>Rp10.000</span>
+
+</div>
+
+</div>
+
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+CapCut Pro
+</h2>
+
+<p class="desc">
+Edit video profesional tanpa watermark,
+dengan efek dan template premium.
+</p>
+
+<div class="price">
+
+1 Bulan:
+<span>Rp36.000</span><br>
+
+1 Tahun:
+<span>Rp290.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+Alight Motion
+</h2>
+
+<p class="desc">
+Editing video dengan efek premium
+untuk Android dan iOS.
+</p>
+
+<div class="price">
+
+1 Tahun:
+<span>Rp1.000</span>
+
+</div>
+
+</div>
+
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+Lightroom Premium
+</h2>
+
+<p class="desc">
+Edit foto cinematic dengan preset premium
+dan fitur lengkap.
+</p>
+
+<div class="price">
+
+1 Tahun:
+<span>Rp6.500</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+PicsArt Pro
+</h2>
+
+<p class="desc">
+Editing foto, poster, feed Instagram,
+dan desain kreatif tanpa watermark.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Rp3.000</span><br>
+
+Private:
+<span>Rp6.400</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+Remini Premium
+</h2>
+
+<p class="desc">
+AI enhancer untuk membuat foto lebih tajam,
+jernih, dan berkualitas HD.
+</p>
+
+<div class="price">
+
+1 Tahun:
+<span>Rp7.800</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+VSCO Premium
+</h2>
+
+<p class="desc">
+Preset premium, filter aesthetic,
+dan tools edit foto profesional.
+</p>
+
+<div class="price">
+
+1 Tahun:
+<span>Rp6.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Design">
+
+<span class="category">
+🎨 Design
+</span>
+
+<h2>
+Meitu Premium
+</h2>
+
+<p class="desc">
+Edit foto dan video dengan fitur AI,
+filter, dan tools premium.
+</p>
+
+<div class="price">
+
+Sharing 1 Bulan:
+<span>Rp12.000</span><br>
+
+Private 1 Bulan:
+<span>Rp19.000</span>
+
+</div>
+
+</div>
+<!-- STREAMING PRODUCTS -->
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+Netflix Premium
+</h2>
+
+<p class="desc">
+Streaming film & series dengan kualitas Full HD / 4K UHD untuk HP, TV, dan PC.
+</p>
+
+<div class="price">
+
+Netflix Android 1P2U:
+<span>Rp11.500</span><br>
+
+Netflix Android 1P1U:
+<span>Rp15.500</span><br>
+
+Semi Private:
+<span>Mulai Rp19.500</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+YouTube Premium
+</h2>
+
+<p class="desc">
+Tanpa iklan, YouTube Music, dan pengalaman streaming lebih nyaman.
+</p>
+
+<div class="price">
+
+Famplan:
+<span>Rp3.000</span><br>
+
+Individual:
+<span>Mulai Rp10.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+Spotify Premium
+</h2>
+
+<p class="desc">
+Musik tanpa iklan, download offline, dan kualitas audio terbaik.
+</p>
+
+<div class="price">
+
+Famplan:
+<span>Rp16.000</span><br>
+
+Individual:
+<span>Mulai Rp6.500</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+Disney+ Hotstar
+</h2>
+
+<p class="desc">
+Nonton film Disney, Marvel, Pixar, anime, dan berbagai konten eksklusif.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Mulai Rp6.000</span><br>
+
+Private:
+<span>Rp40.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+Vidio Premium
+</h2>
+
+<p class="desc">
+Akses pertandingan olahraga, series, dan hiburan premium.
+</p>
+
+<div class="price">
+
+Sharing Mobile:
+<span>Rp19.500</span><br>
+
+Private All Device:
+<span>Rp35.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+VIU Premium
+</h2>
+
+<p class="desc">
+Drama Asia dengan update lebih cepat, bebas iklan, dan download offline.
+</p>
+
+<div class="price">
+
+Private 1 Tahun:
+<span>Rp500</span><br>
+
+Lifetime:
+<span>Rp1.500</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+WeTV Premium
+</h2>
+
+<p class="desc">
+Streaming drama dan film dengan kualitas HD dan akun bergaransi.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Mulai Rp9.000</span><br>
+
+Private:
+<span>Rp30.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+iQIYI Premium
+</h2>
+
+<p class="desc">
+Film dan drama Asia dengan pilihan paket sharing dan private.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Mulai Rp3.500</span><br>
+
+Private:
+<span>Mulai Rp30.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+HBO Max Premium
+</h2>
+
+<p class="desc">
+Streaming film dan series premium dengan kualitas hingga 4K HDR.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Rp16.000</span><br>
+
+Private:
+<span>Mulai Rp50.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="Streaming">
+
+<span class="category">
+🎬 Streaming
+</span>
+
+<h2>
+Prime Video
+</h2>
+
+<p class="desc">
+Film dan series dengan kualitas tinggi dan akses akun premium.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Rp5.000</span><br>
+
+Private:
+<span>Rp9.000</span>
+
+</div>
+
+</div>
+
+
+<!-- EDUCATION & PRODUCTIVITY -->
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+📚 Productivity
+</span>
+
+<h2>
+Microsoft 365 Premium
+</h2>
+
+<p class="desc">
+Word, Excel, PowerPoint, OneDrive 1TB dan fitur AI produktivitas.
+</p>
+
+<div class="price">
+
+Sharing 1 Bulan:
+<span>Rp7.500</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+📚 Productivity
+</span>
+
+<h2>
+Grammarly Premium
+</h2>
+
+<p class="desc">
+Koreksi grammar, penulisan profesional, dan bebas typo.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Rp12.000</span><br>
+
+Private:
+<span>Rp29.000</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+📚 Productivity
+</span>
+
+<h2>
+WPS Office Pro
+</h2>
+
+<p class="desc">
+Aplikasi office lengkap dengan cloud storage dan template premium.
+</p>
+
+<div class="price">
+
+Sharing:
+<span>Rp6.000</span><br>
+
+Private:
+<span>Rp18.500</span>
+
+</div>
+
+</div>
+
+
+<div class="card" data-category="AI">
+
+<span class="category">
+📚 Productivity
+</span>
+
+<h2>
+Zoom Premium
+</h2>
+
+<p class="desc">
+Meeting online tanpa batas waktu hingga 100 peserta.
+</p>
+
+<div class="price">
+
+14 Hari:
+<span>Rp4.500</span><br>
+
+1 Bulan:
+<span>Rp11.000</span>
+
+</div>
+
+</div>
+<!-- VPN & SECURITY -->
+
+<div class="card" data-category="VPN">
+
+<span class="category">
+🔐 VPN
+</span>
+
+<h2>
+Surfshark Premium
+</h2>
+
+<p class="desc">
+VPN premium untuk browsing aman, cepat, dan akses server global.
+</p>
+
+<div class="price">
+Sharing 2 Bulan:
+<span>Rp11.000</span><br>
+
+Private:
+<span>Mulai Rp6.000</span>
+</div>
+
+</div>
+
+
+<div class="card" data-category="VPN">
+
+<span class="category">
+🔐 VPN
+</span>
+
+<h2>
+Express VPN Pro
+</h2>
+
+<p class="desc">
+VPN cepat dan stabil untuk streaming, gaming, dan privasi.
+</p>
+
+<div class="price">
+1 Bulan:
+<span>Rp10.000</span>
+</div>
+
+</div>
+
+
+<div class="card" data-category="VPN">
+
+<span class="category">
+🔐 VPN
+</span>
+
+<h2>
+Avira Phantom VPN
+</h2>
+
+<p class="desc">
+VPN unlimited dengan server banyak negara dan perlindungan DNS.
+</p>
+
+<div class="price">
+3 Bulan:
+<span>Rp9.000</span>
+</div>
+
+</div>
+
+
+<div class="card" data-category="VPN">
+
+<span class="category">
+🔐 VPN
+</span>
+
+<h2>
+Windscribe VPN
+</h2>
+
+<p class="desc">
+Akses 69+ negara dengan koneksi cepat dan tanpa batas.
+</p>
+
+<div class="price">
+1 Bulan:
+<span>Rp18.000</span>
+</div>
+
+</div>
+
+
+<!-- GAME -->
+
+<div class="card" data-category="Game">
+
+<span class="category">
+🎮 Game
+</span>
+
+<h2>
+Robux Vilog
+</h2>
+
+<p class="desc">
+Top up Robux murah, cepat, aman, dan terpercaya.
+</p>
+
+<div class="price">
+
+80 Robux:
+<span>Rp14.000</span><br>
+
+500 Robux:
+<span>Rp75.000</span><br>
+
+1000 Robux:
+<span>Rp150.000</span>
+
+</div>
+
+</div>
+
+
+<!-- SCRIPT -->
+
+<div class="card" data-category="Game">
+
+<span class="category">
+🛒 Store Tools
+</span>
+
+<h2>
+SC Store V8
+</h2>
+
+<p class="desc">
+Script automation untuk kebutuhan toko dan bisnis digital.
+</p>
+
+<div class="price">
+Hubungi Owner untuk harga lengkap.
+</div>
+
+<a 
+href="https://wa.me/6285111662004"
+target="_blank"
+class="link-btn">
+
+Hubungi Owner
+
+</a>
+
+</div>
+
+
+<!-- JUASTORE OFFICIAL LINK -->
 
 <div class="card">
-<h3>Canva Pro</h3>
-<div class="price">Mulai 1K</div>
-<p>Workspace Premium</p>
-</div>
 
-<div class="card">
-<h3>Vidio Platinum</h3>
-<div class="price">Mulai 15K</div>
-<p>Khusus TV & Mobile</p>
-</div>
+<span class="category">
+🌐 Official
+</span>
 
-<div class="card">
-<h3>Apple Music</h3>
-<div class="price">Mulai 9K</div>
-<p>Premium Subscription</p>
-</div>
+<h2>
+Link JuaStore
+</h2>
 
-<div class="card">
-<h3>Alight Motion</h3>
-<div class="price">Mulai 1K</div>
-<p>Editing Premium</p>
-</div>
+<p class="desc">
+Auto order, testimonial, informasi store, dan komunitas resmi.
+</p>
 
-<div class="card">
-<h3>VIU Premium</h3>
-<div class="price">Mulai 1K</div>
-<p>Private Account</p>
-</div>
 
-<div class="card">
-<h3>YouTube Premium</h3>
-<div class="price">Mulai 8K</div>
-<p>Tanpa Iklan</p>
-</div>
+<a class="link-btn"
+href="https://t.me/juastorepremium_bot"
+target="_blank">
 
-</div>
+🤖 Telegram Bot
 
-<h2>Kenapa Pilih JuaStore?</h2>
+</a>
 
-<div class="grid">
 
-<div class="card">⚡ Fast Response</div>
-<div class="card">🛡️ Garansi Produk</div>
-<div class="card">⭐ Trusted Seller</div>
-<div class="card">💰 Harga Terjangkau</div>
+<a class="link-btn"
+href="https://lynk.id/juastore"
+target="_blank">
+
+ℹ️ Info Store
+
+</a>
+
+
+<a class="link-btn"
+href="https://whatsapp.com/channel/0029Vb7ru9H4dTnK7FocDW1S"
+target="_blank">
+
+⭐ Testimoni
+
+</a>
+
 
 </div>
 
-<h2>Kontak</h2>
-
-<div class="card">
-<p>📷 Instagram: @juastore_premium</p>
-<p>🎵 TikTok: @juastorepremium</p>
-<p>📢 Telegram: JuaStore</p>
-<p>📱 WhatsApp Admin</p>
-</div>
 
 </div>
+
+</section>
+
+
+<!-- FLOAT WHATSAPP -->
+
+<a 
+href="https://wa.me/6285183302004?text=Halo%20JuaStore,%20saya%20mau%20order"
+class="whatsapp"
+target="_blank">
+
+💬
+
+</a>
+
+
+<!-- FOOTER -->
 
 <footer>
-© 2026 JuaStore Premium Digital
+
+<h3>
+🐨 JuaStore Premium
+</h3>
+
+<br>
+
+<p>
+Premium Apps • Streaming • AI • Game • VPN
+</p>
+
+<br>
+
+<p>
+© 2026 JuaStore. All Rights Reserved.
+</p>
+
 </footer>
+
+
+<script>
+// DARK / LIGHT MODE
+
+function toggleMode(){
+
+    document.body.classList.toggle("light-mode");
+
+}
+
+
+// SEARCH PRODUCT
+
+const search = document.getElementById("search");
+
+search.addEventListener("keyup", function(){
+
+    let keyword = search.value.toLowerCase();
+
+    let cards = document.querySelectorAll(".card");
+
+
+    cards.forEach(function(card){
+
+        let text = card.innerText.toLowerCase();
+
+
+        if(text.includes(keyword)){
+
+            card.style.display = "block";
+
+        }
+
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+});
+
+
+
+// FILTER CATEGORY
+
+function filterProduct(category){
+
+    let cards =
+    document.querySelectorAll(".card");
+
+    let buttons =
+    document.querySelectorAll(".filter-btn");
+
+
+    buttons.forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+
+    event.target.classList.add("active");
+
+
+    cards.forEach(card=>{
+
+        if(category === "all"){
+
+            card.style.display = "block";
+
+        }
+
+        else if(
+        card.dataset.category === category){
+
+            card.style.display = "block";
+
+        }
+
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+
+// ANIMATION ON LOAD
+
+window.onload = function(){
+
+    let cards =
+    document.querySelectorAll(".card");
+
+
+    cards.forEach((card,index)=>{
+
+        card.style.opacity = "0";
+
+        card.style.transform =
+        "translateY(30px)";
+
+
+        setTimeout(()=>{
+
+            card.style.transition =
+            "0.5s";
+
+            card.style.opacity = "1";
+
+            card.style.transform =
+            "translateY(0)";
+
+        }, index * 60);
+
+
+    });
+
+};
+
+</script>
 
 </body>
 </html>
