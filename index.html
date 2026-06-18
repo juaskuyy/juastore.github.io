@@ -1,200 +1,325 @@
-<!-- HEADER JUASTORE -->
-
-<div class="card">
-
-<h1>🐨🩶 JUASTORE</h1>
-
-<p class="desc">
-Premium Apps & Digital Product<br>
-Akun premium murah, aman, dan terpercaya ✨
-</p>
-
-<div class="price">
-
-<div class="type">
-🤖 BOT TELEGRAM AUTO ORDER [24 JAM]
-</div>
-
-<a href="https://t.me/juastorepremium_bot" target="_blank">
-t.me/juastorepremium_bot
-</a>
-
-<br><br>
-
-<div class="type">
-⭐ TESTIMONIAL JUASTORE
-</div>
-
-<a href="https://whatsapp.com/channel/0029Vb7ru9H4dTnK7FocDW1S" target="_blank">
-Lihat Testimonial
-</a>
-
-<br><br>
-
-<div class="type">
-ℹ️ INFO JUASTORE
-</div>
-
-<a href="https://lynk.id/juastore" target="_blank">
-lynk.id/juastore
-</a>
-
-<br><br>
-
-<div class="type">
-👥 GROUP JUASTORE
-</div>
-
-▣ Group JuaStore #01<br>
-<a href="https://chat.whatsapp.com/HSQcXPrUVSlBMMjtqWcCDG" target="_blank">
-Gabung Group 01
-</a>
-
-<br><br>
-
-▣ Group JuaStore #02<br>
-<a href="https://chat.whatsapp.com/CTP1EhYFdMrHOPzp9wSslW" target="_blank">
-Gabung Group 02
-</a>
-
-<br><br>
-
-▣ Group JuaStore #03<br>
-<a href="https://chat.whatsapp.com/F0oGQebznuRLJ0Grka6Ujo" target="_blank">
-Gabung Group 03
-</a>
-
-</div>
-
-</div>
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JuaStore Premium</title>
+<title>JuaStore | Premium Apps & Digital Product</title>
 
 <style>
+/* FOOTER JUASTORE */
+
+.footer {
+    margin-top: 40px;
+    padding: 35px 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+    border-top: 2px solid #444;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 
+        0 0 15px rgba(255,255,255,0.4);
+    margin-bottom: 15px;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    display: block;
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    background: #222;
+    padding: 12px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    background: #555;
+}
+
+.footer-line {
+    height: 1px;
+    background: #444;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #888;
+}
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
-    font-family:Arial, sans-serif;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#111827;
-    color:white;
-    padding:20px;
-}
-
-.header{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.header h1{
-    font-size:32px;
-    color:#ff7de9;
-}
-
-.header p{
-    color:#ddd;
-    margin-top:10px;
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 20px;
 }
 
 .container{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
-    gap:20px;
+    max-width: 900px;
+    margin: auto;
 }
+
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#cfcfcf;
+    font-size:15px;
+}
+
+
+/* CARD */
 
 .card{
-    background:#1f2937;
-    border:1px solid #374151;
+    background:#1b1b1b;
+    border:1px solid #3a3a3a;
     border-radius:18px;
-    padding:18px;
-    height:auto;
-    min-height:100px;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    padding:20px;
+    margin-bottom:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.5);
+    transition:0.3s;
 }
 
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#b5b5b5;
+}
+
+
 .card h2{
-    color:#ff7de9;
-    margin-bottom:10px;
+    color:#ffffff;
+    margin-bottom:12px;
     font-size:22px;
 }
 
+
 .desc{
-    color:#e5e7eb;
+    color:#d3d3d3;
     margin-bottom:15px;
-    line-height:1.5;
+    line-height:1.6;
 }
+
+
+/* HARGA */
 
 .price{
-    background:#111827;
+    background:#111111;
     border-radius:12px;
-    padding:12px;
-    color:#fff;
-
-    /* Anti crop harga */
-    white-space:normal;
+    padding:15px;
+    line-height:1.8;
     overflow-wrap:break-word;
-    word-break:break-word;
-    line-height:1.7;
 }
+
 
 .type{
-    color:#60a5fa;
+    color:#e6e6e6;
     font-weight:bold;
     margin-top:10px;
+    margin-bottom:8px;
 }
 
-@media(max-width:500px){
+
+/* LINK */
+
+a{
+    color:#9fd3ff;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+/* BUTTON LINK */
+
+.link-button{
+    display:block;
+    background:#2b2b2b;
+    color:white;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+
+.link-button:hover{
+    background:#444;
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
 
     body{
         padding:12px;
     }
 
-    .container{
-        grid-template-columns:1fr;
+    .header h1{
+        font-size:24px;
+    }
+
+    .card{
+        padding:16px;
     }
 
     .card h2{
-        font-size:20px;
+        font-size:18px;
     }
+
 }
 
 </style>
+
 </head>
 
+
 <body>
-
-<div class="header">
-<h1>🐨 JuaStore Premium</h1>
-<p>Aplikasi Premium Murah & Bergaransi</p>
-</div>
-
 
 <div class="container">
 
 
-<!-- ADOBE -->
+<!-- HEADER JUASTORE -->
+
+<div class="card header">
+
+<h1>
+🐨🩶 JUASTORE 🩶🐨
+</h1>
+
+<p>
+Premium Apps & Digital Product
+<br>
+Akun Premium Murah • Aman • Terpercaya
+</p>
+
+
+<a class="link-button"
+href="https://t.me/juastorepremium_bot"
+target="_blank">
+
+🤖 BOT TELEGRAM AUTO ORDER 24 JAM
+
+</a>
+
+
+<a class="link-button"
+href="https://whatsapp.com/channel/0029Vb7ru9H4dTnK7FocDW1S"
+target="_blank">
+
+⭐ TESTIMONIAL JUASTORE
+
+</a>
+
+
+<a class="link-button"
+href="https://lynk.id/juastore"
+target="_blank">
+
+ℹ️ INFO JUASTORE
+
+</a>
+
+
+<a class="link-button"
+href="https://chat.whatsapp.com/HSQcXPrUVSlBMMjtqWcCDG"
+target="_blank">
+
+👥 GROUP JUASTORE #01
+
+</a>
+
+
+<a class="link-button"
+href="https://chat.whatsapp.com/CTP1EhYFdMrHOPzp9wSslW"
+target="_blank">
+
+👥 GROUP JUASTORE #02
+
+</a>
+
+
+<a class="link-button"
+href="https://chat.whatsapp.com/F0oGQebznuRLJ0Grka6Ujo"
+target="_blank">
+
+👥 GROUP JUASTORE #03
+
+</a>
+
+
+</div>
+
+
+<!-- MULAI PRODUK DI BAWAH INI -->
+<!-- ADOBE CREATIVE -->
 
 <div class="card">
 
 <h2>🎨 ADOBE CREATIVE</h2>
 
 <p class="desc">
-Akses aplikasi desain premium lengkap! Cocok untuk editing, desain, konten, hingga kebutuhan profesional.
+Akses aplikasi desain premium lengkap!<br>
+Cocok untuk editing, desain, konten, hingga kebutuhan profesional ✨
 </p>
 
 <div class="price">
-<div class="type">Adobe Creative</div>
+
+<div class="type">
+Adobe Creative
+</div>
+
 ▣ 3 Bulan : Rp 19.000 (Bergaransi)<br>
 ▣ 4 Bulan : Rp 27.000 (Bergaransi)
+
 </div>
 
 </div>
@@ -207,7 +332,8 @@ Akses aplikasi desain premium lengkap! Cocok untuk editing, desain, konten, hing
 <h2>🎬 ALIGHT MOTION</h2>
 
 <p class="desc">
-Edit video makin keren tanpa batas dengan fitur premium lengkap.
+Edit video makin keren tanpa batas!<br>
+Nikmati fitur premium Alight Motion dengan akses lengkap ✨
 </p>
 
 <div class="price">
@@ -216,10 +342,11 @@ Edit video makin keren tanpa batas dengan fitur premium lengkap.
 Private iOS & Android
 </div>
 
-▣ 1 Tahun : Rp 1.000<br><br>
+▣ 1 Tahun : Rp 1.000
+
 
 <div class="type">
-Paket Bulk 1 Tahun
+📦 Paket Bulk 1 Tahun Cocok untuk Dijual Kembali
 </div>
 
 ▣ 10 Akun : Rp 5.500<br>
@@ -245,7 +372,8 @@ Paket Bulk 1 Tahun
 <h2>🎧 APPLE MUSIC</h2>
 
 <p class="desc">
-Nikmati fitur premium tanpa batas dengan kualitas terbaik.
+Nikmati fitur premium tanpa batas!<br>
+Akses aplikasi premium favorit dengan kualitas terbaik ✨
 </p>
 
 <div class="price">
@@ -254,7 +382,8 @@ Nikmati fitur premium tanpa batas dengan kualitas terbaik.
 Apple Music
 </div>
 
-▣ 1 Bulan : Rp 9.800<br><br>
+▣ 1 Bulan : Rp 9.800
+
 
 <div class="type">
 Head Apple Music
@@ -265,6 +394,8 @@ Head Apple Music
 </div>
 
 </div>
+
+
 <!-- APPLE TV -->
 
 <div class="card">
@@ -272,7 +403,7 @@ Head Apple Music
 <h2>🍿 APPLE TV</h2>
 
 <p class="desc">
-Nikmati tayangan premium dari Apple! 
+Nikmati tayangan premium dari Apple!<br>
 Streaming film & series eksklusif dengan kualitas terbaik ✨
 </p>
 
@@ -296,7 +427,7 @@ Sharing Account
 <h2>🌐 AVIRA PHANTOM VPN PRO</h2>
 
 <p class="desc">
-Browsing aman, cepat & tanpa batas!
+Browsing aman, cepat & tanpa batas!<br>
 Nikmati koneksi private dengan perlindungan premium ✨
 </p>
 
@@ -320,7 +451,7 @@ Private Bergaransi
 <h2>🎬 BSTATION</h2>
 
 <p class="desc">
-Nonton anime & konten favorit lebih seru!
+Nonton anime & konten favorit lebih seru!<br>
 Nikmati akses premium dengan kualitas HD tanpa gangguan ✨
 </p>
 
@@ -345,7 +476,7 @@ Sharing Account
 <h2>📄 CAMSCANNER</h2>
 
 <p class="desc">
-Scan dokumen jadi lebih praktis & profesional!
+Scan dokumen jadi lebih praktis & profesional!<br>
 Nikmati fitur premium tanpa watermark dan tanpa batas ✨
 </p>
 
@@ -370,7 +501,7 @@ Sharing Account
 <h2>🎨 CANVA PREMIUM</h2>
 
 <p class="desc">
-Desain makin mudah & profesional!
+Desain makin mudah & profesional!<br>
 Nikmati fitur premium Canva untuk editing tanpa batas ✨
 </p>
 
@@ -388,7 +519,6 @@ Canva Member
 ▣ 1 Tahun : Rp 3.500<br>
 ▣ Lifetime : Rp 10.000
 
-<br><br>
 
 <div class="type">
 Canva Admin
@@ -396,7 +526,6 @@ Canva Admin
 
 ▣ 1 Bulan : Rp 5.000
 
-<br><br>
 
 <div class="type">
 Canva Owner
@@ -415,7 +544,7 @@ Canva Owner
 <h2>🎬 CAPCUT PRO</h2>
 
 <p class="desc">
-Editing video jadi makin profesional!
+Editing video jadi makin profesional!<br>
 Nikmati semua fitur Pro CapCut tanpa batas ✨
 </p>
 
@@ -444,20 +573,20 @@ CapCut Private
 <h2>🤖 CHATGPT PREMIUM</h2>
 
 <p class="desc">
-Nikmati fitur AI premium tanpa batas!
+Nikmati fitur AI premium tanpa batas!<br>
 Cocok untuk belajar, kerja, coding, hingga kebutuhan harian ✨
 </p>
 
 <div class="price">
 
 <div class="type">
-ChatGPT Go
+ChatGPT Go Private
 </div>
 
+▣ 1 Bulan : Rp 23.000<br>
 ▣ 3 Bulan : Rp 55.000<br>
 ▣ 1 Tahun : Rp 85.000
 
-<br><br>
 
 <div class="type">
 ChatGPT Plus
@@ -466,7 +595,6 @@ ChatGPT Plus
 ▣ 1 Bulan Private : Rp 23.000<br>
 ▣ 1 Bulan Sharing : Rp 13.000
 
-<br><br>
 
 <div class="type">
 ChatGPT Pro
@@ -484,20 +612,44 @@ ChatGPT Pro
 
 <div class="card">
 
-<h2>🧠 CLAUDE AI PREMIUM</h2>
+<h2>🤖 CLAUDE AI PREMIUM</h2>
 
 <p class="desc">
-AI premium untuk kerja, belajar & produktivitas!
+AI premium untuk kerja, belajar & produktivitas!<br>
 Nikmati pengalaman AI lebih cepat, stabil, dan powerful ✨
 </p>
 
 <div class="price">
 
 <div class="type">
-Sharing – Full Garansi
+Sharing — Full Garansi
 </div>
 
 ▣ 1 Bulan : Rp 55.000
+
+</div>
+
+</div>
+
+
+<!-- CRUNCHYROLL PREMIUM -->
+
+<div class="card">
+
+<h2>🍿 CRUNCHYROLL PREMIUM</h2>
+
+<p class="desc">
+Nonton anime favorit tanpa batas!<br>
+Nikmati streaming anime premium dengan kualitas terbaik ✨
+</p>
+
+<div class="price">
+
+<div class="type">
+Sharing Account
+</div>
+
+▣ 1 Tahun : Rp 10.000
 
 </div>
 
@@ -511,7 +663,7 @@ Sharing – Full Garansi
 <h2>🎬 DISNEY+ HOTSTAR</h2>
 
 <p class="desc">
-Streaming film & series premium tanpa batas!
+Streaming film & series premium tanpa batas!<br>
 Nikmati tayangan Disney, Marvel, Pixar, Anime & lainnya ✨
 </p>
 
@@ -529,7 +681,6 @@ Sharing (Full Garansi)
 ▣ 1 Bulan : Rp 23.000<br>
 ▣ 1 Tahun : Rp 50.000
 
-<br><br>
 
 <div class="type">
 Private (Full Garansi)
@@ -542,28 +693,6 @@ Private (Full Garansi)
 </div>
 
 
-<!-- CRUNCHYROLL PREMIUM -->
-
-<div class="card">
-
-<h2>🍿 CRUNCHYROLL PREMIUM</h2>
-
-<p class="desc">
-Nonton anime favorit tanpa batas!
-Nikmati streaming anime premium dengan kualitas terbaik ✨
-</p>
-
-<div class="price">
-
-<div class="type">
-Sharing Account
-</div>
-
-▣ 1 Tahun : Rp 10.000
-
-</div>
-
-</div>
 <!-- DOMAIN PRIVATE -->
 
 <div class="card">
@@ -571,7 +700,7 @@ Sharing Account
 <h2>🌐 DOMAIN PRIVATE</h2>
 
 <p class="desc">
-Domain murah & cocok untuk website pribadi, bisnis, maupun portofolio.
+Domain murah & cocok untuk website pribadi, bisnis maupun portofolio!<br>
 Buat identitas online lebih profesional ✨
 </p>
 
@@ -617,7 +746,7 @@ List Domain
 <h2>🎬 DRAKORID PREMIUM</h2>
 
 <p class="desc">
-Nonton drakor makin nyaman tanpa gangguan!
+Nonton drakor makin nyaman tanpa gangguan!<br>
 Nikmati akses premium dengan akun stabil & kualitas terbaik ✨
 </p>
 
@@ -629,7 +758,6 @@ Sharing Account
 
 ▣ 1 Bulan : Rp 10.000
 
-<br><br>
 
 <div class="type">
 Private Account
@@ -649,7 +777,7 @@ Private Account
 <h2>🎭 DRAMA APPS PREMIUM</h2>
 
 <p class="desc">
-Nikmati drama & film premium tanpa batas!
+Nikmati drama & film premium tanpa batas!<br>
 Streaming lebih seru dengan kualitas HD tanpa iklan ✨
 </p>
 
@@ -661,15 +789,11 @@ Reel Short Sharing — Bergaransi
 
 ▣ 1 Bulan : Rp 15.000
 
-<br><br>
-
 <div class="type">
 Melolo Sharing — Bergaransi
 </div>
 
 ▣ 1 Bulan : Rp 9.500
-
-<br><br>
 
 <div class="type">
 Short Max Sharing — Bergaransi
@@ -680,17 +804,15 @@ Short Max Sharing — Bergaransi
 </div>
 
 </div>
-
-
 <!-- DRAMABOX PREMIUM -->
 
 <div class="card">
 
-<h2>📺 DRAMABOX PREMIUM</h2>
+<h2>🎬 DRAMABOX PREMIUM</h2>
 
 <p class="desc">
-Nonton drama favorit tanpa batas!
-Nikmati akses premium dengan tontonan bebas iklan ✨
+Nonton drama favorit tanpa batas!<br>
+Nikmati tontonan bebas iklan dengan kualitas terbaik ✨
 </p>
 
 <div class="price">
@@ -713,7 +835,7 @@ Sharing Account
 <h2>📚 DUOLINGO PREMIUM</h2>
 
 <p class="desc">
-Belajar bahasa jadi lebih seru & tanpa batas!
+Belajar bahasa jadi lebih seru & tanpa batas!<br>
 Nikmati fitur premium Duolingo untuk belajar lebih nyaman ✨
 </p>
 
@@ -740,7 +862,7 @@ Private Account
 <h2>📖 E-BOOK PREMIUM</h2>
 
 <p class="desc">
-Baca buku digital premium kapan saja!
+Baca buku digital premium kapan saja!<br>
 Cocok untuk belajar, self improvement & hiburan ✨
 </p>
 
@@ -767,7 +889,7 @@ E-Book Collection
 <h2>🔥 EPIK PREMIUM</h2>
 
 <p class="desc">
-Edit foto & desain jadi lebih mudah dengan fitur premium!
+Edit foto & desain jadi lebih mudah dengan fitur premium!<br>
 Cocok untuk konten, poster, thumbnail & kebutuhan editing ✨
 </p>
 
@@ -791,7 +913,7 @@ Premium Account
 <h2>📚 FIZZO NOVEL PREMIUM</h2>
 
 <p class="desc">
-Baca novel favorit tanpa batas!
+Baca novel favorit tanpa batas!<br>
 Nikmati pengalaman membaca lebih nyaman & bebas iklan ✨
 </p>
 
@@ -815,7 +937,7 @@ Sharing Account
 <h2>🎬 GAGAOOLALA</h2>
 
 <p class="desc">
-Streaming drama & film eksklusif lebih nyaman!
+Streaming drama & film eksklusif lebih nyaman!<br>
 Nikmati tontonan premium dengan kualitas HD tanpa iklan ✨
 </p>
 
@@ -830,6 +952,8 @@ Sharing Account
 </div>
 
 </div>
+
+
 <!-- GEMINI PREMIUM -->
 
 <div class="card">
@@ -837,7 +961,7 @@ Sharing Account
 <h2>🤖 GEMINI PREMIUM</h2>
 
 <p class="desc">
-Nikmati AI canggih dari Google tanpa batas!
+Nikmati AI canggih dari Google tanpa batas!<br>
 Cocok untuk belajar, kerja, coding & produktivitas ✨
 </p>
 
@@ -863,7 +987,7 @@ Private Account
 <h2>📱 GETCONTACT PREMIUM</h2>
 
 <p class="desc">
-Nikmati fitur premium GetContact lebih lengkap!
+Nikmati fitur premium GetContact lebih lengkap!<br>
 Akses fitur eksklusif dengan akun stabil & aman ✨
 </p>
 
@@ -887,7 +1011,7 @@ Private Account
 <h2>✍️ GRAMMARLY PREMIUM</h2>
 
 <p class="desc">
-Menulis lebih rapi, profesional & bebas typo!
+Menulis lebih rapi, profesional & bebas typo!<br>
 Cocok untuk tugas, kerja, chatting & kebutuhan bahasa Inggris ✨
 </p>
 
@@ -897,15 +1021,12 @@ Cocok untuk tugas, kerja, chatting & kebutuhan bahasa Inggris ✨
 Harga Reseller
 </div>
 
-<br>
-
 <div class="type">
 Sharing Account
 </div>
 
 ▣ 1 Bulan : Rp 12.000
 
-<br><br>
 
 <div class="type">
 Private Account
@@ -925,7 +1046,7 @@ Private Account
 <h2>🤖 GROK AI PREMIUM</h2>
 
 <p class="desc">
-AI pintar dengan akses real-time & fitur canggih!
+AI pintar dengan akses real-time & fitur canggih!<br>
 Cocok untuk riset, coding, analisis & kebutuhan harian ✨
 </p>
 
@@ -937,13 +1058,12 @@ Sharing
 
 ▣ 3 Bulan : Rp 50.000
 
-<br><br>
 
 <div class="type">
 Private
 </div>
 
-▣ 3 Day : Rp 6.000<br>
+▣ 3 Days : Rp 6.000<br>
 ▣ 3 Bulan : Rp 150.000
 
 </div>
@@ -958,7 +1078,7 @@ Private
 <h2>🎬 HBO MAX PREMIUM</h2>
 
 <p class="desc">
-Streaming film & series premium tanpa batas!
+Streaming film & series premium tanpa batas!<br>
 Nikmati tayangan eksklusif HBO dengan kualitas terbaik ✨
 </p>
 
@@ -970,7 +1090,6 @@ HBO Max Sharing Standard
 
 ▣ 1 Bulan : Rp 16.000
 
-<br><br>
 
 <div class="type">
 HBO Max Sharing Ultimate
@@ -978,7 +1097,6 @@ HBO Max Sharing Ultimate
 
 ▣ 1 Bulan : Rp 18.500
 
-<br><br>
 
 <div class="type">
 HBO Max Standar Private
@@ -986,7 +1104,6 @@ HBO Max Standar Private
 
 ▣ 1 Bulan : Rp 50.000
 
-<br><br>
 
 <div class="type">
 HBO Max Ultimate Private
@@ -1006,7 +1123,7 @@ HBO Max Ultimate Private
 <h2>📄 I LOVE PDF PREMIUM</h2>
 
 <p class="desc">
-Edit, convert & kelola file PDF jadi lebih mudah!
+Edit, convert & kelola file PDF jadi lebih mudah!<br>
 Cocok untuk tugas, kerja maupun kebutuhan sehari-hari ✨
 </p>
 
@@ -1030,7 +1147,7 @@ Sharing Account
 <h2>🎨 IBIS PAINT X PREMIUM</h2>
 
 <p class="desc">
-Menggambar & editing jadi lebih maksimal!
+Menggambar & editing jadi lebih maksimal!<br>
 Nikmati fitur premium Ibis Paint X tanpa batas ✨
 </p>
 
@@ -1054,7 +1171,7 @@ Ibis Paint X Android
 <h2>📱 IFAKE PREMIUM</h2>
 
 <p class="desc">
-Buat tampilan chat & custom project jadi lebih keren!
+Buat tampilan chat & custom project jadi lebih keren!<br>
 Nikmati fitur premium iFake tanpa batas ✨
 </p>
 
@@ -1078,8 +1195,8 @@ Sharing Android Only — Bergaransi
 <h2>🎬 IQIYI PREMIUM</h2>
 
 <p class="desc">
-Nonton drama & film Asia lebih lengkap!
-Streaming lebih nyaman dengan kualitas tinggi & tanpa iklan ✨
+Nonton drama & film Asia lebih lengkap!<br>
+Streaming lebih nyaman dengan kualitas tinggi tanpa iklan ✨
 </p>
 
 <div class="price">
@@ -1090,7 +1207,6 @@ Sharing Plan Standar
 
 ▣ 1 Bulan : Rp 3.500
 
-<br><br>
 
 <div class="type">
 Sharing Plan Premium
@@ -1099,7 +1215,6 @@ Sharing Plan Premium
 ▣ 1 Bulan : Rp 5.500<br>
 ▣ 1 Tahun : Rp 8.500
 
-<br><br>
 
 <div class="type">
 Private Standar
@@ -1107,7 +1222,6 @@ Private Standar
 
 ▣ 1 Bulan : Rp 30.000
 
-<br><br>
 
 <div class="type">
 Private Premium
@@ -1125,7 +1239,7 @@ Private Premium
 <h2>📝 KILONOTES PREMIUM</h2>
 
 <p class="desc">
-Catatan digital makin rapi & profesional!
+Catatan digital makin rapi & profesional!<br>
 Cocok untuk belajar, kerja, dan planning harian ✨
 </p>
 
@@ -1149,7 +1263,7 @@ Sharing X Android
 <h2>🎨 LEONARDO AI PREMIUM</h2>
 
 <p class="desc">
-AI generator gambar super detail & realistis!
+AI generator gambar super detail & realistis!<br>
 Cocok untuk desain, konten, dan kreativitas tanpa batas ✨
 </p>
 
@@ -1173,7 +1287,7 @@ Leonardo
 <h2>📸 LIGHTROOM PREMIUM</h2>
 
 <p class="desc">
-Edit foto jadi lebih aesthetic & profesional!
+Edit foto jadi lebih aesthetic & profesional!<br>
 Nikmati fitur premium Lightroom dengan preset berkualitas tinggi ✨
 </p>
 
@@ -1197,7 +1311,7 @@ Lightroom
 <h2>🎬 LOKLOK PREMIUM</h2>
 
 <p class="desc">
-Nonton film & drama jadi lebih seru!
+Nonton film & drama jadi lebih seru!<br>
 Akses konten premium dengan kualitas tinggi tanpa gangguan ✨
 </p>
 
@@ -1209,7 +1323,6 @@ Sharing HP & PC
 
 ▣ 1 Bulan : Rp 15.000
 
-<br><br>
 
 <div class="type">
 Private HP & PC
@@ -1217,7 +1330,6 @@ Private HP & PC
 
 ▣ 1 Bulan : Rp 30.000
 
-<br><br>
 
 <div class="type">
 Sharing All Device
@@ -1225,7 +1337,6 @@ Sharing All Device
 
 ▣ 1 Bulan : Rp 23.000
 
-<br><br>
 
 <div class="type">
 Private All Device
@@ -1245,7 +1356,7 @@ Private All Device
 <h2>📺 MANGO TV VIP</h2>
 
 <p class="desc">
-Nonton film & drama VIP lebih nyaman!
+Nonton film & drama VIP lebih nyaman!<br>
 Streaming tanpa iklan dengan kualitas terbaik ✨
 </p>
 
@@ -1269,7 +1380,7 @@ Sharing — Bergaransi
 <h2>📸 MEITU PREMIUM</h2>
 
 <p class="desc">
-Edit foto & video jadi lebih aesthetic & keren!
+Edit foto & video jadi lebih aesthetic & keren!<br>
 Nikmati fitur premium Meitu tanpa batas ✨
 </p>
 
@@ -1282,7 +1393,6 @@ Premium Sharing
 ▣ 7 Days : Rp 4.000<br>
 ▣ 1 Bulan : Rp 12.000
 
-<br><br>
 
 <div class="type">
 Premium Private
@@ -1303,7 +1413,7 @@ Premium Private
 <h2>🎬 MELOLO PREMIUM</h2>
 
 <p class="desc">
-Nonton drama & film lebih seru tanpa batas!
+Nonton drama & film lebih seru tanpa batas!<br>
 Streaming nyaman tanpa iklan ✨
 </p>
 
@@ -1327,7 +1437,7 @@ Sharing Account
 <h2>💼 MICROSOFT 365 PREMIUM</h2>
 
 <p class="desc">
-Kerja & produktivitas jadi lebih maksimal!
+Kerja & produktivitas jadi lebih maksimal!<br>
 Akses semua aplikasi Office dengan fitur lengkap ✨
 </p>
 
@@ -1351,7 +1461,7 @@ Sharing Account
 <h2>🎬 MOVIEBOX PREMIUM</h2>
 
 <p class="desc">
-Nonton film & series lebih puas tanpa batas!
+Nonton film & series lebih puas tanpa batas!<br>
 Streaming HD dengan fitur lengkap & nyaman ✨
 </p>
 
@@ -1365,7 +1475,6 @@ Sharing Android Only
 ▣ 3 Bulan : Rp 9.000<br>
 ▣ 12 Bulan : Rp 11.000
 
-<br><br>
 
 <div class="type">
 Sharing iOS Only
@@ -1386,7 +1495,7 @@ Sharing iOS Only
 <h2>📷 OLDROLL PRO</h2>
 
 <p class="desc">
-Edit foto vintage aesthetic jadi lebih keren!
+Edit foto vintage aesthetic jadi lebih keren!<br>
 Nikmati semua fitur kamera klasik & filter unik ✨
 </p>
 
@@ -1410,17 +1519,16 @@ Sharing — Bergaransi
 <h2>🤖 PERPLEXITY PREMIUM</h2>
 
 <p class="desc">
-AI pencarian & riset super cepat berbasis premium!
+AI pencarian & riset super cepat berbasis premium!<br>
 Cari informasi lebih akurat & responsif ✨
 </p>
 
 <div class="price">
 
 <div class="type">
-Harga Reseller
+◉ HARGA RESELLER
 </div>
 
-<br>
 
 <div class="type">
 Sharing
@@ -1428,7 +1536,6 @@ Sharing
 
 ▣ 1 Bulan : Rp 9.000
 
-<br><br>
 
 <div class="type">
 Private
@@ -1448,7 +1555,7 @@ Private
 <h2>🎨 PICSART PRO</h2>
 
 <p class="desc">
-Edit foto & desain jadi lebih aesthetic!
+Edit foto & desain jadi lebih aesthetic!<br>
 Nikmati fitur premium PicsArt tanpa batas ✨
 </p>
 
@@ -1460,7 +1567,6 @@ PicsArt Pro Sharing
 
 ▣ 1 Bulan : Rp 3.000
 
-<br><br>
 
 <div class="type">
 PicsArt Pro Private
@@ -1480,7 +1586,7 @@ PicsArt Pro Private
 <h2>🎬 PRIME VIDEO PREMIUM</h2>
 
 <p class="desc">
-Nonton film & series lebih nyaman tanpa gangguan!
+Nonton film & series lebih nyaman tanpa gangguan!<br>
 Akses video berkualitas tinggi & bebas iklan ✨
 </p>
 
@@ -1492,7 +1598,6 @@ Private Account
 
 ▣ 1 Bulan : Rp 9.000
 
-<br><br>
 
 <div class="type">
 Sharing Account
@@ -1512,7 +1617,7 @@ Sharing Account
 <h2>📷 PROCCD PREMIUM</h2>
 
 <p class="desc">
-Edit foto jadi lebih aesthetic & profesional!
+Edit foto jadi lebih aesthetic & profesional!<br>
 Nikmati fitur kamera premium tanpa batas ✨
 </p>
 
@@ -1534,7 +1639,7 @@ Sharing Android Only — Bergaransi
 <h2>✍️ QUILLBOT PRO</h2>
 
 <p class="desc">
-Parafrase & writing tool premium untuk hasil lebih rapi!
+Parafrase & writing tool premium untuk hasil lebih rapi!<br>
 Cocok untuk tugas, artikel, dan kebutuhan writing ✨
 </p>
 
@@ -1559,7 +1664,7 @@ Sharing Account
 <h2>📺 RCTI+ PREMIUM</h2>
 
 <p class="desc">
-Streaming TV & konten lokal lebih lengkap!
+Streaming TV & konten lokal lebih lengkap!<br>
 Nikmati tayangan premium dengan akses stabil ✨
 </p>
 
@@ -1584,7 +1689,7 @@ RCTI+ Premium
 <h2>📸 REMINI PREMIUM</h2>
 
 <p class="desc">
-Foto jadi lebih jernih & HD dengan AI!
+Foto jadi lebih jernih & HD dengan AI!<br>
 Edit foto lebih cepat, tajam, dan profesional ✨
 </p>
 
@@ -1599,6 +1704,8 @@ Sharing X Android
 </div>
 
 </div>
+
+
 <!-- JUASTORE ROBUX VILOG -->
 
 <div class="card">
@@ -1606,7 +1713,7 @@ Sharing X Android
 <h2>🎮 JUASTORE ROBUX VILOG</h2>
 
 <p class="desc">
-Top up Robux murah & proses cepat!
+Top up Robux murah & proses cepat!<br>
 Avatar makin keren, main makin puas ✨
 </p>
 
@@ -1627,7 +1734,6 @@ Avatar makin keren, main makin puas ✨
 ▣ 1000 Robux : Rp 150.000<br>
 ▣ 1500 Robux : Rp 225.000
 
-<br><br>
 
 <div class="type">
 💠 Robux Sultan
@@ -1640,7 +1746,6 @@ Avatar makin keren, main makin puas ✨
 ▣ 5000 Robux : Rp 750.000<br>
 ▣ 10.000 Robux : Rp 1.400.000
 
-<br><br>
 
 <div class="type">
 🔥 Upgrade Premium
@@ -1662,8 +1767,8 @@ Avatar makin keren, main makin puas ✨
 <h2>📚 SCRIBD PREMIUM</h2>
 
 <p class="desc">
-Akses ribuan buku & dokumen premium!
-Belajar dan membaca jadi lebih mudah serta lengkap ✨
+Akses ribuan buku & dokumen premium!<br>
+Belajar dan membaca jadi lebih mudah dan lengkap ✨
 </p>
 
 <div class="price">
@@ -1686,30 +1791,23 @@ Private Account
 <h2>🧾 SCRIPT KHUSUS STORE V8</h2>
 
 <p class="desc">
-SC STORE V8 – Script khusus store & bot untuk kebutuhan automation dan bisnis online ✨
+SC Store V8 untuk kebutuhan automation dan bisnis online ✨
 </p>
 
 <div class="price">
 
-<div class="type">
-Info Script
-</div>
-
-• Judul Script : SC STORE V8<br>
-• Tersedia via chat owner / website
-
-<br><br>
-
+📌 Judul Script : SC STORE V8<br>
 📞 Kontak Owner:<br>
 <a href="https://wa.me/6285111662004" target="_blank">
-wa.me/6285111662004
+WhatsApp Owner
 </a>
 
 <br><br>
 
 🛒 Order Otomatis:<br>
+
 <a href="https://lynk.id/juastore/6dgll8xnlgk5" target="_blank">
-lynk.id/juastore/6dgll8xnlgk5
+Beli Script
 </a>
 
 </div>
@@ -1724,14 +1822,11 @@ lynk.id/juastore/6dgll8xnlgk5
 <h2>🎬 SHORTMAX PREMIUM</h2>
 
 <p class="desc">
-Nonton drama & film lebih seru tanpa batas dengan akun premium stabil ✨
+Nonton drama & film lebih seru tanpa batas!<br>
+Akses premium dengan akun stabil ✨
 </p>
 
 <div class="price">
-
-<div class="type">
-Harga Reseller
-</div>
 
 <div class="type">
 Private (iOS & Android)
@@ -1751,7 +1846,8 @@ Private (iOS & Android)
 <h2>🎧 SPOTIFY PREMIUM</h2>
 
 <p class="desc">
-Musik tanpa batas, tanpa iklan, dan kualitas audio terbaik ✨
+Musik tanpa batas dan tanpa iklan!<br>
+Nikmati kualitas audio terbaik ✨
 </p>
 
 <div class="price">
@@ -1763,7 +1859,6 @@ Famplan — Bergaransi
 ▣ 1 Bulan : Rp 16.000<br>
 ▣ 2 Bulan : Rp 31.000
 
-<br><br>
 
 <div class="type">
 Individual — Bergaransi
@@ -1772,7 +1867,6 @@ Individual — Bergaransi
 ▣ 1 Bulan : Rp 16.500<br>
 ▣ 3 Bulan : Rp 36.000
 
-<br><br>
 
 <div class="type">
 Individual — No Garansi
@@ -1793,7 +1887,7 @@ Individual — No Garansi
 <h2>🔐 SURFSHARK PREMIUM</h2>
 
 <p class="desc">
-VPN premium untuk keamanan & akses tanpa batas.
+VPN premium untuk keamanan & akses tanpa batas!<br>
 Browsing lebih aman, cepat, dan privat ✨
 </p>
 
@@ -1805,7 +1899,6 @@ Sharing — Bergaransi
 
 ▣ 2 Bulan : Rp 11.000
 
-<br><br>
 
 <div class="type">
 Private — Bergaransi
@@ -1826,7 +1919,7 @@ Private — Bergaransi
 <h2>📄 TURNITIN PREMIUM</h2>
 
 <p class="desc">
-Cek plagiarisme dan akun Turnitin lebih mudah.
+Cek plagiarisme dan akun Turnitin lebih mudah!<br>
 Cocok untuk skripsi, tugas, jurnal & penelitian ✨
 </p>
 
@@ -1838,7 +1931,6 @@ Cek Plagiasi Turnitin
 
 ▣ 1x Cek : Rp 3.800
 
-<br><br>
 
 <div class="type">
 Akun Turnitin Private
@@ -1849,17 +1941,18 @@ Akun Turnitin Private
 </div>
 
 </div>
+
+
 <!-- VIDIO PREMIUM -->
 
 <div class="card">
 
-<h2>📺 VIDIO PREMIUM 🐨</h2>
+<h2>📺 VIDIO PREMIUM</h2>
 
 <p class="desc">
-Streaming olahraga & hiburan lebih lengkap!
+Streaming olahraga & hiburan lebih lengkap!<br>
 Akses konten premium, match live & series terbaik ✨
 </p>
-
 <div class="price">
 
 <div class="type">
@@ -1869,7 +1962,6 @@ Private Platinum
 ▣ 1 Bulan Mobile : Rp 25.500<br>
 ▣ 1 Bulan All Device : Rp 35.000
 
-<br><br>
 
 <div class="type">
 Sharing Platinum
@@ -1878,7 +1970,6 @@ Sharing Platinum
 ▣ 1 Bulan Mobile : Rp 19.500<br>
 ▣ 1 Bulan All Device : Rp 21.000
 
-<br><br>
 
 <div class="type">
 Private Platinum TV Only (1 Tahun)
@@ -1903,7 +1994,7 @@ Private Platinum TV Only (1 Tahun)
 <h2>🎬 VIKI RAKUTEN PLUS</h2>
 
 <p class="desc">
-Nonton drama Asia & konten premium lebih lengkap!
+Nonton drama Asia & konten premium lebih lengkap!<br>
 Streaming lebih nyaman dengan akun stabil ✨
 </p>
 
@@ -1915,7 +2006,6 @@ Sharing — Bergaransi
 
 ▣ 1 Bulan : Rp 11.000
 
-<br><br>
 
 <div class="type">
 Private — Bergaransi
@@ -1935,8 +2025,8 @@ Private — Bergaransi
 <h2>⚽ VISION SPORT+</h2>
 
 <p class="desc">
-Nonton olahraga & pertandingan lebih lengkap!
-Streaming sport, Timnas, & PayTV dengan kualitas terbaik ✨
+Nonton olahraga & pertandingan lebih lengkap!<br>
+Streaming sport, Timnas & PayTV dengan kualitas terbaik ✨
 </p>
 
 <div class="price">
@@ -1949,7 +2039,6 @@ Private
 ▣ 1 Bulan + BeinSport PayTV : Rp 11.000<br>
 ▣ 1 Minggu + BeinSport PayTV : Rp 6.500
 
-<br><br>
 
 <div class="type">
 Sharing
@@ -1970,7 +2059,7 @@ Sharing
 <h2>🎬 VIU PREMIUM</h2>
 
 <p class="desc">
-Nonton drama Asia lebih lengkap & cepat update!
+Nonton drama Asia lebih lengkap & cepat update!<br>
 Streaming tanpa iklan dengan kualitas HD ✨
 </p>
 
@@ -1982,7 +2071,6 @@ Private Anti Limit (200 Tahun / Lifetime)
 
 ▣ Lifetime : Rp 1.500
 
-<br><br>
 
 <div class="type">
 Bulk Private Lifetime Cocok Untuk Dijual Kembali
@@ -2008,7 +2096,7 @@ Bulk Private Lifetime Cocok Untuk Dijual Kembali
 <h2>🔐 VPN EXPRESS PRO</h2>
 
 <p class="desc">
-VPN premium cepat, aman & stabil!
+VPN premium cepat, aman & stabil!<br>
 Akses internet lebih bebas dan privasi lebih terjaga ✨
 </p>
 
@@ -2032,8 +2120,8 @@ Private Account
 <h2>🔐 VPN HMA PRO</h2>
 
 <p class="desc">
-VPN premium cepat, aman & stabil!
-Nikmati akses internet tanpa batas & lebih privat ✨
+VPN premium cepat, aman & stabil!<br>
+Nikmati akses internet tanpa batas dan lebih privat ✨
 </p>
 
 <div class="price">
@@ -2054,7 +2142,7 @@ Private Account
 <h2>📸 VSCO PREMIUM</h2>
 
 <p class="desc">
-Edit foto & video jadi lebih aesthetic dan cinematic!
+Edit foto & video jadi lebih aesthetic & cinematic!<br>
 Nikmati preset premium & tools lengkap ✨
 </p>
 
@@ -2065,8 +2153,6 @@ Sharing Android Only
 </div>
 
 ▣ 1 Tahun : Rp 6.000
-
-<br><br>
 
 <div class="type">
 Sharing Android Only — Bergaransi
@@ -2086,7 +2172,7 @@ Sharing Android Only — Bergaransi
 <h2>📚 WATTPAD PREMIUM+</h2>
 
 <p class="desc">
-Baca cerita & novel lebih nyaman tanpa gangguan!
+Baca cerita & novel lebih nyaman tanpa gangguan!<br>
 Akses premium dengan fitur lengkap ✨
 </p>
 
@@ -2098,7 +2184,6 @@ Private — Bergaransi
 
 ▣ 1 Bulan : Rp 13.500
 
-<br><br>
 
 <div class="type">
 Sharing — Bergaransi
@@ -2119,7 +2204,7 @@ Sharing — Bergaransi
 <h2>📺 WE TV PREMIUM</h2>
 
 <p class="desc">
-Nonton drama & film lebih lengkap dengan kualitas premium!
+Nonton drama & film lebih lengkap dengan kualitas premium!<br>
 Streaming nyaman & stabil ✨
 </p>
 
@@ -2133,7 +2218,6 @@ Sharing
 ▣ 3 Bulan : Rp 19.000<br>
 ▣ 1 Tahun : Rp 34.000
 
-<br><br>
 
 <div class="type">
 Private
@@ -2153,7 +2237,7 @@ Private
 <h2>📚 WIBUKU PREMIUM</h2>
 
 <p class="desc">
-Baca buku & komik tanpa batas!
+Baca buku & komik tanpa batas!<br>
 Akses koleksi premium dengan lebih nyaman ✨
 </p>
 
@@ -2178,7 +2262,7 @@ Sharing — Bergaransi
 <h2>🔐 WINDSCRIBE VPN</h2>
 
 <p class="desc">
-VPN cepat, stabil, dan aman untuk semua kebutuhan!
+VPN cepat, stabil & aman untuk semua kebutuhan!<br>
 Akses internet lebih bebas tanpa batas ✨
 </p>
 
@@ -2202,7 +2286,7 @@ Sharing Account
 <h2>📸 WINK PREMIUM</h2>
 
 <p class="desc">
-Edit foto & video jadi lebih aesthetic dengan AI!
+Edit foto & video jadi lebih aesthetic dengan AI!<br>
 Hasil lebih bersih, halus, dan profesional ✨
 </p>
 
@@ -2227,7 +2311,7 @@ Private Android Only
 <h2>📄 WPS OFFICE PRO</h2>
 
 <p class="desc">
-Aplikasi office lengkap untuk kerja & produktivitas!
+Aplikasi office lengkap untuk kerja & produktivitas!<br>
 Buat, edit, dan simpan file lebih mudah ✨
 </p>
 
@@ -2239,7 +2323,6 @@ Private — Bergaransi
 
 ▣ 1 Bulan : Rp 18.500
 
-<br><br>
 
 <div class="type">
 Sharing — Bergaransi
@@ -2260,7 +2343,7 @@ Sharing — Bergaransi
 <h2>🎬 YOUKU PREMIUM</h2>
 
 <p class="desc">
-Streaming drama & film Asia lebih lengkap!
+Streaming drama & film Asia lebih lengkap!<br>
 Nonton lebih nyaman dan fleksibel ✨
 </p>
 
@@ -2272,7 +2355,6 @@ Sharing
 
 ▣ 1 Bulan : Rp 3.000
 
-<br><br>
 
 <div class="type">
 Private
@@ -2283,6 +2365,8 @@ Private
 </div>
 
 </div>
+
+
 <!-- YOUTUBE PREMIUM -->
 
 <div class="card">
@@ -2290,58 +2374,30 @@ Private
 <h2>🎥 YOUTUBE PREMIUM</h2>
 
 <p class="desc">
-YouTube tanpa iklan & fitur lengkap!
+YouTube tanpa iklan & fitur lengkap!<br>
 Nikmati streaming lebih nyaman dan hemat kuota ✨
 </p>
 
 <div class="price">
 
-<div class="type">
-Famplan Via Invite — Bergaransi
-</div>
-
+<div class="type">Famplan Via Invite — Bergaransi</div>
 ▣ 1 Bulan : Rp 3.000
 
-<br><br>
-
-<div class="type">
-Indplan
-</div>
-
+<div class="type">Indplan</div>
 ▣ 1 Bulan : Rp 10.000<br>
 ▣ 2 Bulan : Rp 16.000<br>
 ▣ 3 Bulan : Rp 23.000
 
-<br><br>
-
-<div class="type">
-Gsuite — Bergaransi
-</div>
-
+<div class="type">Gsuite — Bergaransi</div>
 ▣ 1 Bulan : Rp 11.500
 
-<br><br>
-
-<div class="type">
-FamHead — Bergaransi
-</div>
-
+<div class="type">FamHead — Bergaransi</div>
 ▣ 1 Bulan : Rp 11.000
 
-<br><br>
-
-<div class="type">
-MixPlan — Full Garansi
-</div>
-
+<div class="type">MixPlan — Full Garansi</div>
 ▣ 3 Bulan : Rp 16.000
 
-<br><br>
-
-<div class="type">
-Jasapay — Full Garansi
-</div>
-
+<div class="type">Jasapay — Full Garansi</div>
 ▣ 1 Bulan : Rp 4.000
 
 </div>
@@ -2356,7 +2412,7 @@ Jasapay — Full Garansi
 <h2>💻 ZOOM PREMIUM</h2>
 
 <p class="desc">
-Meeting online lebih stabil & fleksibel!
+Meeting online lebih stabil & fleksibel!<br>
 Cocok untuk belajar, kerja, dan meeting jarak jauh ✨
 </p>
 
@@ -2381,115 +2437,94 @@ Private Account
 <h2>🎬 NETFLIX PREMIUM</h2>
 
 <p class="desc">
-Streaming film & series tanpa batas.<br>
+Streaming film & series tanpa batas<br>
 Kualitas Full HD / 4K UHD ✨
 </p>
 
 <div class="price">
 
 <div class="type">
-🐨 NETFLIX ANDROID / TV
+Netflix Android / TV
 </div>
 
-▣ Netflix 1P2U : Rp 11.500<br>
-▣ Netflix 1P1U : Rp 15.500<br>
-▣ Netflix Semi : Rp 19.500
-
-
-<br><br>
+▣ 1P2U : Rp 11.500<br>
+▣ 1P1U : Rp 15.500<br>
+▣ Semi : Rp 19.500
 
 <div class="type">
-🔑 NETFLIX BY CODE ONLY<br>
-1 Profil • 1 User
+Netflix By Code
 </div>
 
-▣ 3 Hari : Rp 6.500<br>
-▣ 7 Hari : Rp 10.500<br>
-▣ 1 Bulan : Rp 25.500
-
-
-<br><br>
+▣ 1 Profil 1 User : Rp 6.500 - Rp 25.500<br>
+▣ 1 Profil 2 User : Rp 5.500 - Rp 20.000<br>
+▣ Semi Private : Rp 15.500 - Rp 33.000
 
 <div class="type">
-1 Profil • 2 User
+Netflix Via Email + Pass + PIN
 </div>
 
-▣ 3 Hari : Rp 5.500<br>
-▣ 7 Hari : Rp 8.500<br>
-▣ 1 Bulan : Rp 20.000
-
-
-<br><br>
+▣ 1 Profil 1 User : Rp 3.500 - Rp 30.000<br>
+▣ 1 Profil 2 User : Rp 3.000 - Rp 20.000<br>
+▣ Semi Private : Rp 35.000
 
 <div class="type">
-Semi Private
-</div>
-
-▣ 7 Hari : Rp 15.500<br>
-▣ 1 Bulan : Rp 33.000
-
-
-<br><br>
-
-<div class="type">
-📩 NETFLIX VIA EMAIL + PASS + PIN<br>
-1 Profil • 1 User
-</div>
-
-▣ 1 Hari : Rp 3.500<br>
-▣ 1 Minggu : Rp 10.000<br>
-▣ 1 Bulan : Rp 30.000
-
-
-<br><br>
-
-<div class="type">
-1 Profil • 2 User
-</div>
-
-▣ 1 Hari : Rp 3.000<br>
-▣ 7 Hari : Rp 8.500<br>
-▣ 1 Bulan : Rp 20.000
-
-
-<br><br>
-
-<div class="type">
-Semi Private
-</div>
-
-▣ 1 Bulan : Rp 35.000
-
-
-<br><br>
-
-<div class="type">
-👑 NETFLIX PRIVATE
+Netflix Private
 </div>
 
 ▣ 1 Bulan : Rp 145.000
 
-
 <br><br>
-
-<div class="type">
-💡 Real Private
-</div>
-
-• 1 akun isi 5 profil<br>
-• Bebas ganti profil & PIN
-
-
-<br><br>
-
-<div class="type">
-📌 Penjelasan Netflix
-</div>
 
 <a href="https://whatsapp.com/channel/0029Vb7bqxvKgsO1kNqSwl1w" target="_blank">
-Lihat Penjelasan Netflix
+📌 Penjelasan Paket Netflix
 </a>
 
 </div>
 
 </div>
+
+
+</div>
+
+</body>
+<!-- FOOTER JUASTORE -->
+
+<footer class="footer">
+
+    <img src="logo-juastore.png" 
+    alt="JuaStore Logo"
+    class="footer-logo">
+
+    <h2>🐨 JUASTORE</h2>
+
+    <p class="footer-text">
+        Terima kasih telah mengunjungi JuaStore 💙<br>
+        Menyediakan Premium Apps, Streaming, AI Tools,
+        Digital Product, dan kebutuhan digital dengan harga terbaik.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="https://t.me/juastorepremium_bot" target="_blank">
+            🤖 Bot Telegram Auto Order 24 Jam
+        </a>
+
+        <a href="https://whatsapp.com/channel/0029Vb7ru9H4dTnK7FocDW1S" target="_blank">
+            ⭐ Testimonial JuaStore
+        </a>
+
+        <a href="https://lynk.id/juastore" target="_blank">
+            🌐 Info & Semua Link JuaStore
+        </a>
+
+    </div>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">
+        © 2026 JuaStore — Premium Apps & Digital Product <br>
+        Made with 🐨 for digital lovers
+    </p>
+
+</footer>
+</html>
